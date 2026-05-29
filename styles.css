@@ -1,0 +1,162 @@
+/*
+========================================================
+© 2026 ADEGA 24H DELIVERY PREMIUM
+Todos os direitos reservados.
+
+Proprietário:
+EMERSON RODRIGUES DA ROCHA
+
+É proibida a cópia, redistribuição,
+revenda ou reutilização deste sistema
+sem autorização do proprietário.
+
+Sistema protegido por direitos autorais.
+========================================================
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:#050505;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.banner{
+    background:
+    linear-gradient(rgba(0,0,0,.82), rgba(0,0,0,.88)),
+    url("./assets/banner-adega.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.gold{
+    color:#facc15;
+}
+
+.bg-gold{
+    background:#facc15;
+}
+
+.btn-gold{
+    background:#facc15;
+    color:#000;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-gold:hover{
+    background:#eab308;
+    transform:translateY(-2px);
+}
+
+/* CARDS */
+
+.card-produto{
+    background:#111111;
+    border:1px solid #232323;
+    transition:.3s;
+}
+
+.card-produto:hover{
+    transform:translateY(-8px);
+    border-color:#facc15;
+    box-shadow:0 0 25px rgba(250,204,21,.2);
+}
+
+.card-produto img{
+    transition:.4s;
+}
+
+.card-produto:hover img{
+    transform:scale(1.05);
+}
+
+/* STATUS */
+
+.status-preparo{
+    background:#f59e0b;
+}
+
+.status-pronto{
+    background:#16a34a;
+}
+
+/* SCROLL */
+
+.scroll-hidden::-webkit-scrollbar{
+    display:none;
+}
+
+/* MODAL */
+
+#modal-carrinho{
+    backdrop-filter:blur(5px);
+}
+
+/* INPUTS */
+
+input{
+    transition:.3s;
+}
+
+input:focus{
+    border-color:#facc15 !important;
+    box-shadow:0 0 0 3px rgba(250,204,21,.15);
+}
+
+/* BOTÕES */
+
+button{
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:active{
+    transform:scale(.96);
+}
+
+/* ANIMAÇÃO */
+
+@keyframes pulseGold{
+
+    0%{
+        box-shadow:0 0 0 0 rgba(250,204,21,.5);
+    }
+
+    70%{
+        box-shadow:0 0 0 20px rgba(250,204,21,0);
+    }
+
+    100%{
+        box-shadow:0 0 0 0 rgba(250,204,21,0);
+    }
+
+}
+
+#btn-ver-carrinho{
+    animation:pulseGold 2s infinite;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    .banner h1{
+        font-size:3rem !important;
+    }
+
+    .banner p{
+        font-size:1rem !important;
+    }
+
+}
